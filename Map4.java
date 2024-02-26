@@ -77,7 +77,7 @@ public class Map4<K, V> extends MapSecondary<K, V> {
         assert b > 0 : "Violation of: b > 0";
 
         // TODO - fill in body
-        int x = a % b;
+        int x = a - b * (a / b);
         if (a < 0 && x != 0) {
             x = x + b;
         }
